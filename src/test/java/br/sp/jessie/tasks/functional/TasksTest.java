@@ -1,11 +1,11 @@
 package br.sp.jessie.tasks.functional;
 
 import java.util.concurrent.TimeUnit;
-import org.Junit.Assert;
-import org.Junit.Test;
+import org.junit.Assert;
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.CromeDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class TasksTest {
 
@@ -18,7 +18,7 @@ public class TasksTest {
 	
 	@Test
 	public void deveSalvarTarefaComSucesso() {
-		WebDriver driver = new acessarAplicacao();
+		WebDriver driver = acessarAplicacao();
 		try{
 		
 		//Clicar em Add Todo
@@ -44,7 +44,7 @@ public class TasksTest {
 
 	@Test
 	public void naodeveSalvarTarefaSemDescricao() {
-		WebDriver driver = new acessarAplicacao();
+		WebDriver driver = acessarAplicacao();
 		try{
 		
 		//Clicar em Add Todo
@@ -67,7 +67,7 @@ public class TasksTest {
 
 	@Test
 	public void deveSalvarTarefaSemData() {
-		WebDriver driver = new acessarAplicacao();
+		WebDriver driver = acessarAplicacao();
 		try{
 		
 		//Clicar em Add Todo
@@ -86,11 +86,13 @@ public class TasksTest {
 	} 	finally {
 		//fechar o browser
 		driver.quit();
-		}	
+		}
+		
+		}
 
 	@Test
-	public void deveSalvarTarefaComDataPassada(); {
-		WebDriver driver = new acessarAplicacao();
+	public void deveSalvarTarefaComDataPassada() {
+		WebDriver driver = acessarAplicacao();
 		try{
 		
 		//Clicar em Add Todo
@@ -115,5 +117,5 @@ public class TasksTest {
 
 	}
 }
-}
+
 
