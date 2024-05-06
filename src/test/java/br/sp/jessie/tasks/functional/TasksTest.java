@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class TasksTest {
 
 	public WebDriver acessarAplicacao(){
-		System.setProperty("webdriver.chrome.driver", "/home/toninho/Cursos/lab-jenkins-udemy/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/tmp/chromedriver");
 		WebDriver driver = new ChromeDriver();
 		driver.navigate().to("http://192.168.15.3:8001/tasks");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
