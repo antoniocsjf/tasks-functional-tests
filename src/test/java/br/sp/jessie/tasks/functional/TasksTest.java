@@ -89,7 +89,7 @@ public class TasksTest {
 		}	
 
 	@Test
-	public void deveSalvarTarefaComData Passada() {
+	public void deveSalvarTarefaComDataPassada() {
 		WebDriver driver = new acessarAplicacao();
 		try{
 		
